@@ -1,0 +1,51 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pdb
+*.egg-info/
+*.egg
+*.log
+
+# Environment
+.env
+.env.*
+
+# VSCode
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Node
+node_modules/
+
+# Ignore requirements.text (typo file)
+requirements.text
+
+# Ignore other sensitive or unnecessary files
+*.sqlite3
+*.db
+*.bak
+*.swp
+*.swo
+
+# Ignore frontend build artifacts (if any)
+dist/
+build/
+
+# Ignore backup files
+*~
+*.tmp
+
+# Ignore test output
+htmlcov/
+coverage.xml
+*.cover
+
+# Ignore knowledge base cache

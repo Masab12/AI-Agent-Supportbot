@@ -1,0 +1,142 @@
+/*
+ * Masab's AI Portfolio Support Agent - Frontend Styles
+ * A clean, modern, and professional look for the chat UI.
+ */
+:root {
+    --bg-color: #f4f6f8;
+    --chat-window-bg: #ffffff;
+    --user-msg-bg: #007bff;
+    --user-msg-text: #ffffff;
+    --bot-msg-bg: #e9ecef;
+    --bot-msg-text: #343a40;
+    --input-bg: #ffffff;
+    --text-color: #212529;
+    --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --border-radius: 12px;
+}
+
+body {
+    margin: 0;
+    font-family: var(--font-family);
+    background-color: var(--bg-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.chat-container {
+    width: 90%;
+    max-width: 600px;
+    height: 80vh;
+    max-height: 700px;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--chat-window-bg);
+    border-radius: var(--border-radius);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.chat-header {
+    background-color: var(--user-msg-bg);
+    color: var(--user-msg-text);
+    padding: 15px 20px;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+}
+
+.chat-messages {
+    flex-grow: 1;
+    padding: 20px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/* For smooth scrolling */
+.chat-messages {
+    scrollbar-width: thin;
+    scrollbar-color: var(--user-msg-bg) var(--bg-color);
+}
+.chat-messages::-webkit-scrollbar {
+    width: 8px;
+}
+.chat-messages::-webkit-scrollbar-track {
+    background: var(--bg-color);
+}
+.chat-messages::-webkit-scrollbar-thumb {
+    background-color: var(--user-msg-bg);
+    border-radius: 10px;
+    border: 3px solid var(--bg-color);
+}
+
+
+.message {
+    padding: 10px 15px;
+    border-radius: var(--border-radius);
+    max-width: 75%;
+    line-height: 1.5;
+}
+
+.user-message {
+    background-color: var(--user-msg-bg);
+    color: var(--user-msg-text);
+    align-self: flex-end;
+    border-bottom-right-radius: 4px;
+}
+
+.bot-message {
+    background-color: var(--bot-msg-bg);
+    color: var(--bot-msg-text);
+    align-self: flex-start;
+    border-bottom-left-radius: 4px;
+}
+
+.typing-indicator {
+    align-self: flex-start;
+    color: #888;
+    font-style: italic;
+}
+
+.chat-input-form {
+    display: flex;
+    padding: 15px;
+    border-top: 1px solid #e0e0e0;
+    background-color: #f9f9f9;
+}
+
+#userInput {
+    flex-grow: 1;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    padding: 10px 15px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+#userInput:focus {
+    border-color: var(--user-msg-bg);
+}
+
+#sendButton {
+    background-color: var(--user-msg-bg);
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    margin-left: 10px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+#sendButton:hover {
+    background-color: #0056b3;
+}

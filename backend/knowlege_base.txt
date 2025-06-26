@@ -1,0 +1,82 @@
+### MASAB FAROOQUE'S PROFESSIONAL PROFILE & RESUME ###
+
+---
+**Contact & Links**
+---
+Name: Masab Farooque
+Location: G-15/1 Islamabad
+Phone: +923045624189
+Email: masabfarooque1122@gmail.com
+LinkedIn: https://www.linkedin.com/in/masabfarooque
+GitHub: https://github.com/Masab12
+Portfolio: https://masabfarooque.com
+Muck Rack: https://muckrack.com/masab-farooque-1
+
+---
+**Summary**
+---
+Masab Farooque is a versatile tech professional with expertise in Game Development, CMS Development (WordPress, Shopify), Technical SEO, and AI Integration. He builds fast, SEO-friendly websites and hyper-casual games, and has a strong background in web scraping and automation. He runs personal projects like ReplayJutsu and Waifu Pulse, combining his passions for anime, tech, and gaming.
+
+---
+**Experience**
+---
+**Founder | WaifuPulse.com** (12/2024 - Present)
+- Built and scaled an anime blog, achieving 30K+ monthly visitors through SEO-driven growth.
+- Implemented advanced structured data (Schema.org), topical maps for content authority, and optimized the site based on Google algorithm updates.
+
+**SEO Specialist | PentaByteX** (07/2024 - 02/2025)
+- Handled end-to-end SEO strategy and performance optimization for diverse client websites, including JavaScript-based SPAs and traditional CMS platforms.
+- Successfully migrated Client-Side Rendered (CSR) applications to Server-Side Rendering (SSR) to improve SEO crawlability and indexing.
+- Improved Core Web Vitals (CWV) metrics and Lighthouse performance scores.
+
+**Founder | ReplayJutsu.com** (03/2024 - 11/2024)
+- Founded and grew a gaming/tech platform, achieving 100K+ monthly traffic.
+- Utilized entity-based SEO, comprehensive technical optimization, and structured content frameworks for rapid growth.
+
+**Founder | The Panther Tech** (07/2019 - 12/2023)
+- Built and scaled a tech-focused blog covering news, movies, music, tutorials, and video games, growing the audience to over 1 million yearly visitors.
+
+**Unity Game Development Intern | Mindstorm Studios** (3 separate internships: 2023, 2022, 2021)
+- 2023: Developed 'Backyard Defense', a tower defense game. Focused on advanced patterns like State Machines and Object Pooling.
+- 2022: Developed 'Titanic Rescue', a hyper-casual survival game (Won Best Mechanics & selected for Incubation). Focused on gameplay balancing and procedural level design.
+- 2021: Developed 'Bizarre Adventures', a hyper-casual runner. Focused on core gameplay loop design and rapid prototyping.
+
+**Unity Developer | 10Static Studios** (02/2020 - 09/2020)
+- Developed 'Twirly Ball' (hyper-casual infinite runner) and 'Little Monster Jump' (platformer).
+
+---
+**Education**
+---
+**Bachelor of Science in Computer Science** (Graduated 01/2023)
+Comsats University, Islamabad, Wah Campus
+- Specialization: Software Development.
+
+---
+**Skill Arsenal**
+---
+- **Game Development:** Unity, C#, Photon Multiplayer, Game Design, Performance Optimization.
+- **CMS Development:** WordPress, Shopify, WooCommerce, Wix, MediaWiki, Custom Theme/Plugin Development.
+- **Web Technologies:** PHP, MySQL, JavaScript (ES6+), React.js (Next.js), Node.js (Basic), REST APIs.
+- **SEO & Marketing:** Technical SEO, Entity SEO, Structured Data, Core Web Vitals, ASO Basics, CSR vs SSR.
+- **AI Integration:** LLM APIs (OpenAI, OpenRouter, Google AI), Prompt Engineering, AI Chatbots, AI Content Generation.
+- **Web Scraping:** Python, Selenium, BeautifulSoup, Pandas.
+- **Languages:** C#, PHP, Python, JavaScript, HTML, CSS, SQL, Kotlin (Basic), R (Basic).
+
+---
+**Projects**
+---
+- **Waifu Pulse:** Anime news & magazine website with 30K+ monthly visitors.
+- **Anime Catalogue:** Fully automated anime/manga tracking platform using the AniList API.
+- **Movie Vibe AI:** AI-powered movie recommender using OMDb and OpenRouter.
+- **Anime Sauce Finder:** Web app to identify anime from screenshots using Next.js and trace.moe API.
+- **GPU eCommerce Scraper:** Python script using Selenium to scrape 700+ GPU listings from Newegg.
+- **Game Jam Projects:** Backyard Defense, Food Planet (Runner-Up), Titanic Rescue (Best Mechanics), Khan Truck, Bizarre Adventures.
+
+---
+**Awards & Recognition**
+---
+- **Best Mechanics Award:** Mindstorm Studios (Rookie Game Jam 2022) for 'Titanic Rescue'.
+- **Incubation Selection:** Mindstorm Studios (2022) for 'Titanic Rescue'.
+- **Runner-Up:** Developers Game Jam 2.0 for 'Food Planet'.
+- **The Hustler Award:** Epiphany Games (2020).
+- **Google Expert Badge (Bronze Level):** Google Crowdsource.

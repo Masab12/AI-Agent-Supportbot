@@ -1,0 +1,9 @@
+fastapi
+uvicorn[standard]
+python-dotenv
+
+# LangChain Packages
+langchain
+langchain-core
+langchain-groq
+langchain-community # <--- ADD THIS LINE

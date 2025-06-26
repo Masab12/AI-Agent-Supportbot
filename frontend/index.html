@@ -1,0 +1,90 @@
+<!--
+    Masab's AI Portfolio Support Agent - Frontend
+    This UI allows users to chat with Masab's AI Portfolio Assistant about his skills, projects, and professional experience.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat with Masab's AI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="chat-container">
+        <div class="chat-header">
+            Chat with Masab's AI Assistant
+        </div>
+        <div class="chat-messages" id="chatMessages">
+            <!-- Initial bot message -->
+            <div class="message bot-message">
+                Hello! I am Masab Farooque's AI assistant. Feel free to ask me anything about his skills, projects, or professional experience.
+            </div>
+        </div>
+        <form class="chat-input-form" id="chatForm">
+            <input type="text" id="userInput" placeholder="Ask about projects, skills, SEO..." autocomplete="off" required>
+            <button type="submit" id="sendButton">Send</button>
+        </form>
+    </div>
+
+    <script>
+        // Frontend JS Logic (No changes needed, it works as is)
+        const chatForm = document.getElementById('chatForm');
+        const userInput = document.getElementById('userInput');
+        const chatMessages = document.getElementById('chatMessages');
+        const API_URL = 'http://127.0.0.1:8000/chat';
+
+        chatForm.addEventListener('submit', async (event) => {
+            event.preventDefault();
+            const userMessage = userInput.value.trim();
+            if (!userMessage) return;
+
+            addMessage(userMessage, 'user');
+            userInput.value = '';
+            showTypingIndicator();
+
+            try {
+                const response = await fetch(API_URL, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ message: userMessage }),
+                });
+
+                if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+                const data = await response.json();
+                
+                removeTypingIndicator();
+                addMessage(data.response, 'bot');
+            } catch (error) {
+                console.error('Error fetching from API:', error);
+                removeTypingIndicator();
+                addMessage("Sorry, I'm having trouble connecting to my brain. Please check if the backend server is running and try again.", 'bot');
+            }
+        });
+
+        function addMessage(text, sender) {
+            const messageElement = document.createElement('div');
+            messageElement.classList.add('message', `${sender}-message`);
+            messageElement.textContent = text;
+            chatMessages.appendChild(messageElement);
+            chatMessages.scrollTop = chatMessages.scrollHeight;
+        }
+
+        function showTypingIndicator() {
+            const indicator = document.createElement('div');
+            indicator.id = 'typing-indicator';
+            indicator.classList.add('message', 'typing-indicator');
+            indicator.textContent = 'Thinking...';
+            chatMessages.appendChild(indicator);
+            chatMessages.scrollTop = chatMessages.scrollHeight;
+        }
+
+        function removeTypingIndicator() {
+            const indicator = document.getElementById('typing-indicator');
+            if (indicator) indicator.remove();
+        }
+    </script>
+
+</body>
+</html>
